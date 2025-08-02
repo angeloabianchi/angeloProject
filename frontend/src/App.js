@@ -1,26 +1,15 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import Home from './Home/Home';
 
-function App() {
 
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:8000/api/hello/')
-      .then(res => res.json())
-      .then(data => setMessage(data.message));
-  }, []);
-
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>
-          <h1>My Portfolio</h1>
-          <p>{message}</p>
-        </div>
-      </header>
+      <div className="App-body">
+        <Home />
+      </div>
+
     </div>
   );
-}
-
+};
 export default App;
