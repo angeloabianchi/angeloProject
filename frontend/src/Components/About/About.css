@@ -1,16 +1,36 @@
 .aboutPage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100vh;
+  animation: fadeInContent 1s;
+
 }
 
 .about-static {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: space-around;
+  height: fit-content;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  color: #333;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+p {
+  text-align: justify;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

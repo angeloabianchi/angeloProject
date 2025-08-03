@@ -4,9 +4,15 @@ import { MdEmail } from "react-icons/md";
 import "./Home.css";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
   const [message, setMessage] = useState('');
+  const [activeSection, setActiveSection] = useState('about');
+
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+  };
 
   useEffect(() => {
     fetch('http://localhost:8000/api/hello/')
@@ -23,9 +29,18 @@ const Home = () => {
           <p className="home-text">Welcome to my portfolio!</p>
         </div>
         <div className="navBar">
-          <button><span className="button-text">ABOUT</span></button>
-          <button><span className="button-text">PROJECTS</span></button>
-          <button><span className="button-text">CONTACT</span></button>
+          <button onClick={() => handleSectionChange('about')}
+          className={activeSection === 'about' ? 'active' : ''}>
+            <span className="button-text">ABOUT</span>
+          </button>
+          <button onClick={() => handleSectionChange('projects')}
+          className={activeSection === 'projects' ? 'active' : ''}>
+            <span className="button-text">PROJECTS</span>
+          </button>
+          <button onClick={() => handleSectionChange('contact')}
+          className={activeSection === 'contact' ? 'active' : ''}>
+            <span className="button-text">CONTACT</span>
+          </button>
         </div>
         <ul>
           <li>
@@ -55,8 +70,9 @@ const Home = () => {
         </ul>
       </div>
       <div className="home-dynamic">
-        <About />
-        <Projects />
+        {activeSection === "about" && <About />}
+        {activeSection === "projects" && <Projects />}
+        {activeSection === "contact" && <Contact />}
         {/* <p>{message}</p> */}
 
       </div>

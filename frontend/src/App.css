@@ -31,6 +31,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @keyframes spin {

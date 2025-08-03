@@ -1,8 +1,7 @@
-.projectsPage {
-  height: 100vh;
+.contactPage {
   animation: fadeInContent 1s;
-}
 
+}
 
 @keyframes fadeInContent {
   from {

@@ -4,14 +4,32 @@ const About = () => {
   return (
     <div className="aboutPage">
       <div className="about-static">
-        <h1>About Me</h1>
+        <h1 className="aboutTitle">About Me</h1>
         <p>
-          Hello! I'm Angelo Alencar, a Fullstack Developer with a passion for creating dynamic and responsive web applications.
-          I specialize in both frontend and backend development, ensuring a seamless user experience.
+          Hi! 👋 I’m a Fullstack Developer from Barcelona, and I love building
+          web applications that are easy to use and fast. My main tools are
+          React, Django, JavaScript, and Python, and I enjoy working on both
+          frontend and backend. I especially like creating and consuming APIs,
+          fixing performance issues, and making workflows smoother.
         </p>
         <p>
-          With a strong foundation in JavaScript, React, Node.js, and various other technologies, I strive to build efficient and scalable solutions.
-          My goal is to continuously learn and adapt to new challenges in the ever-evolving tech landscape.
+          I didn’t plan to work in tech at first. It started because I was
+          curious and I liked solving problems and understanding how things work.
+          Over time, this became my job. I’ve worked on different projects,
+          from small websites to company tools, handling everything from design
+          to deployment.
+        </p>
+        <p>
+          The best part of my work is learning new things. Every project teaches
+          me something. Maybe a better way to write code, how to automate tasks,
+          or how to improve a design. I believe in teamwork, always improving,
+          and staying curious, no matter how much experience I have.
+        </p>
+        <p>
+          This portfolio is a work in progress. Just like me.
+        </p>
+        <p>
+          Thanks for stopping by!
         </p>
       </div>
     </div>
