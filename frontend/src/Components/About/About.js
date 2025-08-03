@@ -2,9 +2,9 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="aboutPage">
+    <div className="about-page">
       <div className="about-static">
-        <h1 className="aboutTitle">About Me</h1>
+        <h1 className="about-title">About Me</h1>
         <p>
           Hi! 👋 I’m a Fullstack Developer from Barcelona, and I love building
           web applications that are easy to use and fast. My main tools are

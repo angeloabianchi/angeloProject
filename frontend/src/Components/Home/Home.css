@@ -21,12 +21,12 @@
 }
 
 .home-dynamic {
-  width: 55%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  left: 45%;
+  left: 50%;
   justify-content: center;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -76,12 +76,12 @@ p {
 
 button {
   font-family: "Cute Font", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: 25px;
   width: 30%;
   background-color: #344e41;
-  color: rgba(255, 255, 255, 0.5);
+  color: #a8ca7e;
   border: none;
   padding: 10px;
   cursor: pointer;

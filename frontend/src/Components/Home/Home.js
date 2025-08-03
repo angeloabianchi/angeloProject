@@ -52,7 +52,7 @@ const Home = () => {
             </a>
           </li>
           <li>
-            <a href="angeloalencarbianchi@gmail.com" target="_blank"
+            <a href="mailto:angeloalencarbianchi@gmail.com" target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500"
             >
