@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import "./Home.css";
-
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 
 const Home = () => {
   const [message, setMessage] = useState('');
@@ -54,8 +55,9 @@ const Home = () => {
         </ul>
       </div>
       <div className="home-dynamic">
-        <h1>Dynamic</h1>
-        <p>{message}</p>
+        <About />
+        <Projects />
+        {/* <p>{message}</p> */}
 
       </div>
     </div>
